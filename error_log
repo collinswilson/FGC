@@ -1,0 +1,104 @@
+[07-Jul-2021 16:23:32 America/New_York] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/foursqua/kc.foursquareyouthcamp.com/fsquare/classes/DB/conn_db.php on line 6
+[07-Jul-2021 16:25:05 America/New_York] PHP Fatal error:  Can't use function return value in write context in /home/foursqua/kc.foursquareyouthcamp.com/fsquare/classes/PHPMailer-master/src/PHPMailer.php on line 1689
+[07-Jul-2021 16:29:23 America/New_York] PHP Fatal error:  Can't use function return value in write context in /home/foursqua/kc.foursquareyouthcamp.com/fsquare/classes/PHPMailer-master/src/PHPMailer.php on line 1689
+[07-Jul-2021 16:30:53 America/New_York] PHP Fatal error:  Can't use function return value in write context in /home/foursqua/kc.foursquareyouthcamp.com/fsquare/classes/PHPMailer-master/src/PHPMailer.php on line 1689
+[07-Jul-2021 16:32:40 America/New_York] PHP Fatal error:  Can't use function return value in write context in /home/foursqua/kc.foursquareyouthcamp.com/fsquare/classes/PHPMailer-master/src/PHPMailer.php on line 1689
+[07-Jul-2021 16:33:49 America/New_York] PHP Notice:  Undefined variable: campId in /home/foursqua/kc.foursquareyouthcamp.com/fsquare/index.php on line 52
+[07-Jul-2021 16:33:49 America/New_York] PHP Notice:  Undefined variable: regularFee in /home/foursqua/kc.foursquareyouthcamp.com/fsquare/index.php on line 59
+[07-Jul-2021 16:33:49 America/New_York] PHP Notice:  Undefined variable: regularFee in /home/foursqua/kc.foursquareyouthcamp.com/fsquare/index.php on line 66
+[07-Jul-2021 16:33:49 America/New_York] PHP Notice:  Undefined variable: campName in /home/foursqua/kc.foursquareyouthcamp.com/fsquare/index.php on line 327
+[07-Jul-2021 16:33:49 America/New_York] PHP Notice:  Undefined variable: campId in /home/foursqua/kc.foursquareyouthcamp.com/fsquare/index.php on line 641
+[07-Jul-2021 16:40:03 America/New_York] PHP Notice:  Undefined variable: campId in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 52
+[07-Jul-2021 16:40:03 America/New_York] PHP Notice:  Undefined variable: regularFee in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 59
+[07-Jul-2021 16:40:03 America/New_York] PHP Notice:  Undefined variable: regularFee in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 66
+[07-Jul-2021 16:40:03 America/New_York] PHP Notice:  Undefined variable: campName in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 327
+[07-Jul-2021 16:40:03 America/New_York] PHP Notice:  Undefined variable: campId in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 641
+[07-Jul-2021 16:40:17 America/New_York] PHP Notice:  Undefined variable: campId in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 52
+[07-Jul-2021 16:40:17 America/New_York] PHP Notice:  Undefined variable: regularFee in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 59
+[07-Jul-2021 16:40:17 America/New_York] PHP Notice:  Undefined variable: regularFee in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 66
+[07-Jul-2021 16:40:17 America/New_York] PHP Notice:  Undefined variable: campName in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 327
+[07-Jul-2021 16:40:17 America/New_York] PHP Notice:  Undefined variable: campId in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 641
+[07-Jul-2021 16:41:51 America/New_York] PHP Notice:  Undefined variable: campId in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 52
+[07-Jul-2021 16:41:51 America/New_York] PHP Notice:  Undefined variable: regularFee in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 59
+[07-Jul-2021 16:41:51 America/New_York] PHP Notice:  Undefined variable: regularFee in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 66
+[07-Jul-2021 16:41:51 America/New_York] PHP Notice:  Undefined variable: campName in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 327
+[07-Jul-2021 16:41:51 America/New_York] PHP Notice:  Undefined variable: campId in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 641
+[07-Jul-2021 16:42:09 America/New_York] PHP Notice:  Undefined variable: campId in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 52
+[07-Jul-2021 16:42:09 America/New_York] PHP Notice:  Undefined variable: regularFee in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 59
+[07-Jul-2021 16:42:09 America/New_York] PHP Notice:  Undefined variable: regularFee in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 66
+[07-Jul-2021 16:42:09 America/New_York] PHP Notice:  Undefined variable: campName in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 327
+[07-Jul-2021 16:42:09 America/New_York] PHP Notice:  Undefined variable: campId in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 641
+[07-Jul-2021 16:43:22 America/New_York] PHP Notice:  Undefined variable: campId in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 52
+[07-Jul-2021 16:43:22 America/New_York] PHP Notice:  Undefined variable: regularFee in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 59
+[07-Jul-2021 16:43:22 America/New_York] PHP Notice:  Undefined variable: regularFee in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 66
+[07-Jul-2021 16:43:22 America/New_York] PHP Notice:  Undefined variable: campName in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 327
+[07-Jul-2021 16:43:22 America/New_York] PHP Notice:  Undefined variable: campId in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 641
+[07-Jul-2021 16:45:33 America/New_York] PHP Notice:  Undefined variable: campId in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 52
+[07-Jul-2021 16:45:33 America/New_York] PHP Notice:  Undefined variable: regularFee in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 59
+[07-Jul-2021 16:45:33 America/New_York] PHP Notice:  Undefined variable: regularFee in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 66
+[07-Jul-2021 16:45:33 America/New_York] PHP Notice:  Undefined variable: campName in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 327
+[07-Jul-2021 16:45:33 America/New_York] PHP Notice:  Undefined variable: campId in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 641
+[07-Jul-2021 16:58:31 America/New_York] PHP Notice:  Undefined variable: campId in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 52
+[07-Jul-2021 16:58:31 America/New_York] PHP Notice:  Undefined variable: regularFee in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 59
+[07-Jul-2021 16:58:31 America/New_York] PHP Notice:  Undefined variable: regularFee in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 66
+[07-Jul-2021 16:58:31 America/New_York] PHP Notice:  Undefined variable: campName in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 327
+[07-Jul-2021 16:58:31 America/New_York] PHP Notice:  Undefined variable: campId in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 641
+[07-Jul-2021 17:00:41 America/New_York] PHP Notice:  Undefined variable: campId in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 52
+[07-Jul-2021 17:00:41 America/New_York] PHP Notice:  Undefined variable: regularFee in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 59
+[07-Jul-2021 17:00:41 America/New_York] PHP Notice:  Undefined variable: regularFee in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 66
+[07-Jul-2021 17:00:41 America/New_York] PHP Notice:  Undefined variable: campName in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 327
+[07-Jul-2021 17:00:41 America/New_York] PHP Notice:  Undefined variable: campId in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 641
+[07-Jul-2021 17:00:45 America/New_York] PHP Notice:  Undefined variable: campId in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 52
+[07-Jul-2021 17:00:45 America/New_York] PHP Notice:  Undefined variable: regularFee in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 59
+[07-Jul-2021 17:00:45 America/New_York] PHP Notice:  Undefined variable: regularFee in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 66
+[07-Jul-2021 17:00:45 America/New_York] PHP Notice:  Undefined variable: campName in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 327
+[07-Jul-2021 17:00:45 America/New_York] PHP Notice:  Undefined variable: campId in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 641
+[07-Jul-2021 17:00:52 America/New_York] PHP Notice:  Undefined variable: campId in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 52
+[07-Jul-2021 17:00:52 America/New_York] PHP Notice:  Undefined variable: regularFee in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 59
+[07-Jul-2021 17:00:52 America/New_York] PHP Notice:  Undefined variable: regularFee in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 66
+[07-Jul-2021 17:00:52 America/New_York] PHP Notice:  Undefined variable: campName in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 327
+[07-Jul-2021 17:00:52 America/New_York] PHP Notice:  Undefined variable: campId in /home/foursqua/kc.foursquareyouthcamp.com/index.php on line 641
+[02-Aug-2021 13:08:07 America/New_York] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:19:35 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:19:52 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:19:58 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:20:04 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:20:44 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:20:46 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:20:54 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:21:41 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:21:42 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:22:10 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:22:11 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:22:17 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:22:26 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:22:47 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:22:51 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:22:59 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:23:01 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:23:02 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:23:02 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:23:04 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:23:05 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:23:07 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:23:11 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:23:12 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:23:17 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:23:19 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:23:20 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:23:20 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:23:22 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:23:23 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:23:24 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:23:26 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:23:27 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:24:37 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:29:10 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:29:14 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:29:18 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:29:25 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:30:05 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:30:21 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:30:27 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:30:40 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
+[11-Aug-2021 05:30:41 America/New_York] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/foursqua/kc.foursquareyouthcamp.com/classes/DB/conn_db.php on line 6
