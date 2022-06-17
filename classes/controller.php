@@ -132,7 +132,7 @@
     else if(isset($_POST["search"])){
         $tx_ref = mysqli_real_escape_string($conn, htmlentities($_POST["tx_ref"]));
         $userObj = new User($conn, "", "", "", "", "");
-        $userObj->getPayedInUser($tx_ref);
+        $userObj->getPayedInUser($tx_ref); 
     }
 
     else if(isset($_POST["premiumReg"])){

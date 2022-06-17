@@ -57,13 +57,13 @@
         }
         
         function registerCampAnonymous($firstname, $lastname, $phone, $email, $ageGroup, $gender, $kidsComing, $kidsNumber,
-        $member, $district, $arrivalDate, $houseAccess, $anyAmount, $date_time, $regType, $ref, $userId, $campId){
-            $tableFields = "firstname, lastname, phone, email, age_group, gender, cwk, hmk, member, district, arrival, house, support_kc, camp_id, user_id, reg_type, date_created, ref";
-            $variables = "'$firstname', '$lastname', '$phone', '$email', '$ageGroup', '$gender', '$kidsComing', '$kidsNumber', '$member', '$district', '$arrivalDate', '$houseAccess', '$anyAmount', '$campId', '$userId', '$regType', '$date_time', '$ref'";
+        $member, $district, $arrivalDate, $houseAccess, $anyAmount, $date_time, $regType, $ref, $userId, $campId, $tx_ref = null){
+            $tableFields = "firstname, lastname, phone, email, age_group, gender, cwk, hmk, member, district, arrival, house, support_kc, camp_id, user_id, reg_type, date_created, ref, tx_ref";
+            $variables = "'$firstname', '$lastname', '$phone', '$email', '$ageGroup', '$gender', '$kidsComing', '$kidsNumber', '$member', '$district', '$arrivalDate', '$houseAccess', '$anyAmount', '$campId', '$userId', '$regType', '$date_time', '$ref', '$tx_ref'";
             $table = "camp_reg_";
             $success = "Registration Successful";
             $failure = "Oops! Something went wrong, please try again";
-            Query::dbInsert($this->conn, $table, $tableFields, $variables, $success, $failure);
+            Query::payedindbInsert($this->conn, $table, $tableFields, $variables, $success, $failure);
         }
 
         function registerPayedInUser($firstname, $lastname, $phone, $email, $ageGroup, $gender, $kidsComing, $kidsNumber,
@@ -95,30 +95,42 @@
             echo json_encode($returnArray);
         }
 
-        function getPayedInUser (){
+        function getPayedInUser ($tx_ref){
             $returnArray = array();
-            $sel = mysqli_query($this->conn, "SELECT * FROM payedin_camp_reg WHERE tx_ref = '$this->tx_ref'");
+            $sel = mysqli_query($this->conn, "SELECT * FROM payedin_camp_reg WHERE tx_ref = '$tx_ref'");
             $num = mysqli_num_rows($sel);
-            
-            // if($num > 1) {
-            //     while($row = mysqli_fetch_array($sel)){
-            //         $holdingArray = array();
-            //         $holdingArray["id"] = $row["id"];
-            //         $holdingArray["name"] = $row["name"];
-            //         $holdingArray["theme"] = $row["theme"];
-            //         $holdingArray["start"] = $row["start"];
-            //         $holdingArray["end"] = $row["end"];
-            //         $holdingArray["created"] = $row["date_created"];
-            //         $holdingArray["status"] = $row["status"];
-
-            //         array_push($returnArray, $holdingArray);
-            //     }
-
-            //     echo json_encode($returnArray);
-            // } else {
-                return json_encode($sel);
-            // }
+            if($num > 0) {
+                while($row = mysqli_fetch_array($sel)){
+                    $holdingArray = array();
+                    $holdingArray["id"] = $row["id"];
+                    $holdingArray["firstname"] = $row["firstname"];
+                    $holdingArray["lastname"] = $row["lastname"];
+                    $holdingArray["userId"] = $row["user_id"];
+                    $holdingArray["campId"] = $row["camp_id"];
+                    $holdingArray["tx_ref"] = $row["tx_ref"];
+                    array_push($returnArray, $holdingArray);
+                    $sql = mysqli_query($this->conn, "SELECT * FROM camp_reg_ WHERE tx_ref = '$tx_ref'");
+                    $query = mysqli_num_rows($sql);
+                    if($query < 1){
+                        $this->registerCampAnonymous($row["firstname"], 
+                        $row["lastname"], $row['phone'], 
+                        $row['email'], $row['age_group'], 
+                        $row['gender'], $row['cwk'],
+                        $row['hmk'], $row['member'], 
+                        $row['district'], $row['arrival'], 
+                        $row['house'], $row['support_kc'], 
+                        $row['date_created'], 
+                        $row['regType'],$row['ref'], 
+                        $row['user_id'], $row['camp_id'] , $row['tx_ref']);
+                    }
+                }
+                echo json_encode($returnArray);
+            } else {
+                echo json_encode($row);
+            }
         }
+
+        function extract($ref, $ro){}
 
         function fetchAuxData(){
             $returnArray = array();

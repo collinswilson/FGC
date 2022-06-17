@@ -737,7 +737,7 @@
             </div>
         </div>
     </div>
-    <!-- Central Modal Large -->
+    <!-- Central Modal Large --> 
 
     <!-- QrCode Modal Large -->
     <div class="modal fade" id="qrModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -765,7 +765,6 @@
 	
     <!-- jQuery -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/payedin.js"></script>
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
@@ -774,6 +773,8 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Your custom scripts (optional) -->
     <script type="text/javascript" src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script type="text/javascript" src="js/payedin.js"></script>
+
     <script src="https://js.paystack.co/v1/inline.js"></script> 
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">

@@ -9,14 +9,18 @@ function setModal(params) {
 const confirmPayment = (ref) => {
     console.log(ref)
     let search = 'ss'
-    $.post("classes/controller.php", {search, tx_ref : ref}, (data) => {
+    let tx_ref = ref
+    $.post("../classes/controller.php", {search, tx_ref}, (data) => {
         console.log(data, "ddd")
         let d = data || false
         if (d) {
-            console.log(d, "ff")
+            console.log(JSON.parse(d), "ff") 
             // get userId and campId from database  with ref
+            let dd = JSON.parse(d)[0]
+            const userId = dd.userId
+            const campId = dd.campId
             let qrcode = new QRCode('qrCode');
-            qrcode.makeCode(userId + ':' + campId + ':' + ref);
+            qrcode.makeCode(userId + ':' + campId + ':' + tx_ref);
             setModal({
                 headerSelector: $("#modalHeader"),
                 headerContent: "<i class='fas fa-check-circle text-success'></i> Success",
@@ -27,7 +31,6 @@ const confirmPayment = (ref) => {
                 modalSelector: $("#qrModal"),
                 modalState: "show"
             });
-    
         } else {
             // if no data link is invalid 
             setModal({
@@ -45,9 +48,6 @@ const confirmPayment = (ref) => {
             $("#rregisterCampAnonymous").show('slow');
         }
     } )
-    // find by ref from database 
-    // if data link is valid 
-   
 }
 
 let url_string = window.location.href
