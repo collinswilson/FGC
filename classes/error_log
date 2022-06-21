@@ -1,0 +1,19 @@
+[27-May-2021 18:01:37 America/New_York] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/foursqua/kc/classes/DB/conn_db.php on line 6
+[27-May-2021 18:01:37 America/New_York] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/foursqua/kc/classes/DB/conn_db.php on line 6
+[27-May-2021 18:01:37 America/New_York] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/foursqua/kc/classes/DB/conn_db.php on line 6
+[27-May-2021 18:01:37 America/New_York] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/foursqua/kc/classes/DB/conn_db.php on line 6
+[27-May-2021 18:01:37 America/New_York] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/foursqua/kc/classes/DB/conn_db.php on line 6
+[30-May-2021 18:07:24 America/New_York] PHP Notice:  Undefined index: email in /home/foursqua/kc/classes/controller.php on line 44
+[30-May-2021 18:07:24 America/New_York] PHP Notice:  Undefined index: password in /home/foursqua/kc/classes/controller.php on line 45
+[01-Jun-2021 17:23:25 America/New_York] PHP Notice:  Undefined index: userId in /home/foursqua/kc/classes/User.php on line 92
+[01-Jun-2022 08:24:59 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPMailer' not found in /home/foursq19/public_html/kc/classes/User.php:512
+Stack trace:
+#0 /home/foursq19/public_html/kc/classes/controller.php(429): User->verifyEmail('funepoweim@gmai...')
+#1 {main}
+  thrown in /home/foursq19/public_html/kc/classes/User.php on line 512
+[01-Jun-2022 08:27:27 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPMailer' not found in /home/foursq19/public_html/kc/classes/User.php:512
+Stack trace:
+#0 /home/foursq19/public_html/kc/classes/controller.php(429): User->verifyEmail('funepoweim@gmai...')
+#1 {main}
+  thrown in /home/foursq19/public_html/kc/classes/User.php on line 512
+[16-Jun-2022 09:14:33 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /home/foursq19/public_html/kc/classes/DB/conn_db.php on line 6
