@@ -668,6 +668,16 @@
                                         <option value="Ijede District (Ijede District)">Ijede District (Ijede District)</option>
 
                                         <option value="Warri District (Warri District)">Warri District (Warri District)</option>
+                                        
+                            <option value="Asokoro District ">Asokoro District </option>
+                            <option value="Okota District">Okota District </option>
+                            <option value="Association Avenue District">Association Avenue District </option>
+                            <option value="Anthony  District">Anthony  District </option>
+                            <option value="Ijede  District">Ijede  District </option>
+                            <option value="Orimedu  District">Orimedu  District </option>
+                            <option value="Afobaje  District">Afobaje  District </option>
+                            <option value="Eleshin  District">Eleshin  District </option>
+                            <option value="Ijebu Igbo/ Waterside  District">Ijebu Igbo/ Waterside  District </option>
 
                                     </select>
 
@@ -1165,6 +1175,17 @@
                                         <option value="Ijede District (Ijede District)">Ijede District (Ijede District)</option>
 
                                         <option value="Warri District (Warri District)">Warri District (Warri District)</option>
+
+                                        
+                            <option value="Asokoro District ">Asokoro District </option>
+                            <option value="Okota District">Okota District </option>
+                            <option value="Association Avenue District">Association Avenue District </option>
+                            <option value="Anthony  District">Anthony  District </option>
+                            <option value="Ijede  District">Ijede  District </option>
+                            <option value="Orimedu  District">Orimedu  District </option>
+                            <option value="Afobaje  District">Afobaje  District </option>
+                            <option value="Eleshin  District">Eleshin  District </option>
+                            <option value="Ijebu Igbo/ Waterside  District">Ijebu Igbo/ Waterside  District </option>
 
                                     </select>
 
