@@ -2290,7 +2290,7 @@ $(document).ready(function() {
 
         setTimeout(function(){
 
-            gotoLocation("../fsquare");
+            gotoLocation("../");
 
         }, 2000);
 
