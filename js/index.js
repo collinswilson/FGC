@@ -2289,9 +2289,7 @@ $(document).ready(function() {
         });
 
         setTimeout(function(){
-
             gotoLocation("../");
-
         }, 2000);
 
 
