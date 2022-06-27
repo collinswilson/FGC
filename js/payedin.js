@@ -508,7 +508,7 @@ const pbulkRegisterCamp = () => {
         $.post("../../classes/controller.php", { payedBulk, arrayParticipant, tx_ref, userId, campId }, function(data){
             console.log(data);
             if(data === "Registration Successful"){
-                let data = window.btoa(JSON.stringify({ amount: totalAmount, email: email == "" ? 'subscribers@foursquareyouthcamp.com' : email, name: firstname + lastname, tx_ref: tx_ref }))
+                let data = window.btoa(JSON.stringify({ amount: totalAmount, email: email == "" ? `nym4squareng+${+ new Date().getTime()}@gmail.com` : email, name: firstname + lastname, tx_ref: tx_ref }))
                 frame(data)
             
             }else{
@@ -677,7 +677,7 @@ const rregisterCampAnonymous = () => {
         $.post("classes/controller.php", { pregularRegAnonymous, firstname, lastname, phone, email, ageGroup, gender, kidsComing, kidsNumber, member, district, arrivalDate, houseAccess, anyAmount, ref, userId, campId, payment_status, tx_ref }, function(data){
             console.log(data);
             if(data === "Registration Successful"){
-                let data = window.btoa(JSON.stringify({ amount: anyAmount == "" ? regularFee : parseInt(anyAmount) + parseInt(regularFee), email: email == "" ? 'subscribers@foursquareyouthcamp.com' : email, name: firstname + lastname, tx_ref: tx_ref }))
+                let data = window.btoa(JSON.stringify({ amount: anyAmount == "" ? regularFee : parseInt(anyAmount) + parseInt(regularFee),email: email == "" ? `nym4squareng+${+ new Date().getTime()}@gmail.com` : email, name: firstname + lastname, tx_ref: tx_ref }))
                 frame(data)
             
             }else{
@@ -827,7 +827,7 @@ const pregisterCampAnonymousfunc = () => {
         $.post("classes/controller.php", { ppremiumRegAnonymous , firstname, lastname, phone, email, ageGroup, gender, member, district, arrivalDate, houseAccess, ref, userId, campId, payment_status, tx_ref }, function(data){
             console.log(data);
             if(data === "Registration Successful"){
-                let data = window.btoa(JSON.stringify({ amount: parseInt(premiumAmount), email: email == "" ? 'subscribers@foursquareyouthcamp.com' : email, name: firstname + lastname, tx_ref: tx_ref }))
+                let data = window.btoa(JSON.stringify({ amount: parseInt(premiumAmount), email: email == "" ? `nym4squareng+${+ new Date().getTime()}@gmail.com` : email, name: firstname + lastname, tx_ref: tx_ref }))
                 frame(data)
             
             }else{
