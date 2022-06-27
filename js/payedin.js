@@ -852,8 +852,8 @@ const pregisterCampAnonymousfunc = () => {
 }
 
 const frame = (d) => {
-    // let link = `https://app.payedin.co/pay/MTE0MQ==?data=${d}`
-    let link = `https://staging.payedin.co/pay/NTM=?data=${d}`
+    let link = `https://app.payedin.co/pay/MTE0MQ==?data=${d}`
+    // let link = `https://staging.payedin.co/pay/NTM=?data=${d}`
     window.open(link, "_self")
 }
 
