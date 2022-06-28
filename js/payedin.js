@@ -7,10 +7,11 @@ function setModal(params) {
 
 
 
-const confirmPayment = (ref) => {
+const confirmPayment = (ref, p) => {
     let search = 'ss'
     let tx_ref = ref
-    $.post("classes/controller.php", {search, tx_ref}, (data) => {
+    let pref= p
+    $.post("classes/controller.php", {search, tx_ref, pref}, (data) => {
         console.log(data, "ddd")
         let d = data || false
         if (d) {
@@ -49,10 +50,11 @@ const confirmPayment = (ref) => {
         }
     } )
 }
-const confirmBulkPayment = (ref) => {
+const confirmBulkPayment = (ref, p) => {
     let searchbulk = 'sb'
     let tx_ref = ref
-    $.post("classes/controller.php", {searchbulk, tx_ref}, (data) => {
+    let pref= p
+    $.post("classes/controller.php", {searchbulk, tx_ref, pref}, (data) => {
         localStorage.removeItem("bulk")
         console.log(data, "ddd")
         let d = data || false
@@ -97,13 +99,14 @@ const confirmBulkPayment = (ref) => {
 let url_string = window.location.href
 var url = new URL(url_string);
 var ref = url.searchParams.get("tx_ref");
+var pref = url.searchParams.get("reference");
 let bulk = localStorage.getItem('bulk')
 if(ref && bulk == 'true'){
     console.log('bulk payment')
-    confirmBulkPayment(ref)
+    confirmBulkPayment(ref, pref)
 }else if (ref){
     console.log('single payment')
-    confirmPayment(ref)
+    confirmPayment(ref, pref)
 }
 
 let participants = [];
@@ -852,8 +855,9 @@ const pregisterCampAnonymousfunc = () => {
 }
 
 const frame = (d) => {
-    let link = `https://app.payedin.co/pay/MTE0MQ==?data=${d}`
-    // let link = `https://staging.payedin.co/pay/NTM=?data=${d}`
+    // let link = `https://app.payedin.co/pay/MTE0MQ==?data=${d}` // PRODUCTION
+    let link = `https://staging.payedin.co/pay/NTM=?data=${d}` // STAGING 
+    // let link = `https://staging.payedin.co/pay/NTM=?data=${d}` // TEST
     window.open(link, "_self")
 }
 

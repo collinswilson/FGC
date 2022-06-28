@@ -84,14 +84,16 @@
 
     else if(isset($_POST["search"])){
         $tx_ref = mysqli_real_escape_string($conn, htmlentities($_POST["tx_ref"]));
+        $pref = mysqli_real_escape_string($conn, htmlentities($_POST["pref"]));
         $userObj = new User($conn, "", "", "", "", "");
-        $userObj->getPayedInUser($tx_ref); 
+        $userObj->getPayedInUser($tx_ref, $pref); 
     }
     else if(isset($_POST["searchbulk"])){
         $tx_ref = mysqli_real_escape_string($conn, htmlentities($_POST["tx_ref"]));
+        $pref = mysqli_real_escape_string($conn, htmlentities($_POST["pref"]));
         $userObj = new User($conn, "", "", "", "", "");
         // echo "$tx_ref, in ppp";
-        $userObj->getPayedInBulk($tx_ref);  
+        $userObj->getPayedInBulk($tx_ref, $pref);  
     }
 
     else if(isset($_POST["pregularRegAnonymous"])){

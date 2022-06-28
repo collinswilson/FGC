@@ -52,7 +52,7 @@
 
         }
 
-        function getPayedInBulk ($tx_ref){
+        function getPayedInBulk ($tx_ref, $pref){
             // echo "in bbb";
             $sel = mysqli_query($this->conn, "SELECT * FROM payedin_bulk_reg WHERE tx_ref = '$tx_ref'");
             $num = mysqli_num_rows($sel);
@@ -63,7 +63,7 @@
                     $userId = $row['user_id'];
                     $campId = $row['camp_id'];
                     $date_time = date("Y-m-d h:i:s A");
-                    $this->bulkRegisterCamp($participantArray, $tx_ref, $userId, $campId, $date_time);
+                    $this->bulkRegisterCamp($participantArray, $tx_ref, $userId, $campId, $date_time, $pref);
                 }
             //     echo json_encode($returnArray);
             } else {
@@ -71,7 +71,7 @@
             }
         }
 
-        function getPayedInUser ($tx_ref){
+        function getPayedInUser ($tx_ref, $pref){
             $returnArray = array();
             $sel = mysqli_query($this->conn, "SELECT * FROM payedin_camp_reg WHERE tx_ref = '$tx_ref'");
             $num = mysqli_num_rows($sel);
@@ -96,7 +96,7 @@
                         $row['district'], $row['arrival'], 
                         $row['house'], $row['support_kc'], 
                         $row['date_created'], 
-                        $row['regType'],$row['ref'], 
+                        $row['reg_type'],$pref, 
                         $row['user_id'], $row['camp_id'] , $row['tx_ref']);
                     }
                 }
@@ -175,7 +175,7 @@
 
         }
 
-        function bulkRegisterCamp($participantArray, $tx_ref, $userId, $campId, $date_time){
+        function bulkRegisterCamp($participantArray, $tx_ref, $userId, $campId, $date_time, $pref){
             $savedIds = [];
             $success = "Registration Successful";
             $failure = "Oops! Something went wrong, please try again";
@@ -199,7 +199,7 @@
                 $campId = 4;
                 $userId = $userId;
                 $tx_ref = $tx_ref;      
-                $ref = "";
+                $ref = $pref;
                 $tableFields = "firstname, lastname, phone, email, age_group, gender, cwk, hmk, member, district, arrival, house, support_kc, camp_id, user_id, reg_type, date_created, ref, tx_ref";
                 $variables = "'$firstname', '$lastname', '$phone', '$email', '$ageGroup', '$gender', '$kidsComing', '$kidsNumber', '$member', '$district', '$arrivalDate', '$houseAccess', '$anyAmount', '$campId', '$userId', '$regType', '$date_time', '$ref', '$tx_ref'";    
                 $table = "camp_reg_";
