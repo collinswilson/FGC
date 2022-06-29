@@ -489,105 +489,55 @@
                             <option value="Calabar (South South)">Calabar (South South)</option>
 
                             <option value="Port-Harcourt  (South South)">Port-Harcourt  (South South)</option>
-
                             <option value="Uyo (South South)">Uyo (South South)</option>
-
                             <option value="Yenagoa (South South)">Yenagoa (South South)</option>
-
                             <option value="Ikot-Ekpene (South South)">Ikot-Ekpene (South South)</option>
-
                             <option value="Eket (South South)">Eket (South South)</option>
-
                             <option value="Ogbia (South South)">Ogbia (South South)</option>
-
                             <option value="Sagbama (South South)">Sagbama (South South)</option>
-
                             <option value="Ogoja (South South)">Ogoja (South South)</option>
-
                             <option value="Ikom (South South)">Ikom (South South)</option>
-
                             <option value="Oyigbo (South South)">Oyigbo (South South)</option>
-
                             <option value="Bonny (South South)">Bonny (South South)</option>
-
                             <option value="Ahoada (South South)">Ahoada (South South)</option>
-
                             <option value="Sango Ota (Sango Ota)">Sango Ota (Sango Ota)</option>
-
                             <option value="Abeokuta (Abeokuta)">Abeokuta (Abeokuta)</option>
-
                             <option value="Akure (Akure)">Akure (Akure)</option>
-
                             <option value="Ibadan (Oyo)">Ibadan  (Oyo)</option>
-
                             <option value="Ijebu Ode (Abeokuta)">Ijebu Ode (Abeokuta)</option>
-
                             <option value="Ilaro (Sango Ota)">Ilaro (Sango Ota)</option>
-
                             <option value="Osogbo (Akure)">Osogbo (Akure)</option>
-
                             <option value="Ado Ekiti (Akure)">Ado Ekiti (Akure)</option>
-
                             <option value="Oyo (Oyo)">Oyo (Oyo)</option>
-
                             <option value="Ilorin (Kwara)">Ilorin (Kwara)</option>
-
                             <option value="Okitipupa (Akure)">Okitipupa (Akure)</option>
-
                             <option value="Ifo (Sango Ota)">Ifo (Sango Ota)</option>
-
                             <option value="Oye Ekiti (Akure)">Oye Ekiti (Akure)</option>
-
                             <option value="Ikere Ekiti (Akure)">Ikere Ekiti (Akure)</option>
-
                             <option value="Kosubosu (Kwara)">Kosubosu (Kwara)</option>
-
                             <option value="Oro (Kwara)">Oro (Kwara)</option>
-
                             <option value="Itaoshin (Abeokuta)">Itaoshin (Abeokuta)</option>
-
                             <option value="Sagamu (Abeokuta)">Sagamu (Abeokuta)</option>
-
                             <option value="Owo (Akure)">Owo (Akure)</option>
-
                             <option value="Ayepe (Akure)">Ayepe (Akure)</option>
-
                             <option value="Ife (Akure)">Ife (Akure)</option>
-
                             <option value="Ogbomoso (Kwara)">Ogbomoso (Kwara)</option>
-
                             <option value="Shalom (Oyo)">Shalom (Oyo)</option>
-
                             <option value="Molete (Oyo)">Molete (Oyo)</option>
-
                             <option value="Tomori (Sango Ota)">Tomori (Sango Ota)</option>
-
                             <option value="Ilesha (Akure)">Ilesha (Akure)</option>
-
                             <option value="Omoluabi (Oyo)">Omoluabi (Oyo)</option>
-
                             <option value="Iyana (Oyo)">Iyana (Oyo)</option>
-
                             <option value="Ondo (Akure)">Ondo (Akure)</option>
-
                             <option value="Owode (Sango Ota)">Owode (Sango Ota)</option>
-
                             <option value="Ajebo (Abeokuta)">Ajebo (Abeokuta)</option>
-
                             <option value="Obada Idiemi (Abeokuta)">Obada idiemi (Abeokuta)</option>
-
                             <option value="Orimedu District (Orimedu District)">Orimedu District (Orimedu District)</option>
-
                             <option value="Anthony District (Anthony District)">Anthony District (Anthony District)</option>
-
                             <option value="Asokoro District (Asokoro District)">Asokoro District (Asokoro District)</option>
-
                             <option value="Eleshin District (Eleshin District)">Eleshin District (Eleshin District)</option>
-
                             <option value="Ijede District (Ijede District)">Ijede District (Ijede District)</option>
-
                             <option value="Warri District (Warri District)">Warri District (Warri District)</option>
-                            
                             <option value="Asokoro District ">Asokoro District </option>
                             <option value="Okota District">Okota District </option>
                             <option value="Association Avenue District">Association Avenue District </option>
