@@ -76,7 +76,6 @@
                     $anyAmount = $participantArray[$i]["anyAmount"];
                     $regType = $participantArray[$i]["regType"];
                     $date_time = $date_time;
-                    $campId = 4;
                     $userId = $userId;
                     $tx_ref = $tx_ref;
                     $ref = $pref;
@@ -231,7 +230,7 @@
 
         function pbulkRegisterCamp($list, $tx_ref, $userId, $campId, $date_time){
             $tableFields = "list, tx_ref, user_id, camp_id, date";
-            $variables = "'$list', '$tx_ref', '$userId', '$campid', '$date_time'";    
+            $variables = "'$list', '$tx_ref', '$userId', '$campId', '$date_time'";
             $table = "payedin_bulk_reg";
             $success = "Registration Successful";
             $failure = "Oops! Something went wrong, please try again";
