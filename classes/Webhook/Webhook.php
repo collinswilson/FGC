@@ -1,15 +1,14 @@
 <?php
-include 'DB/conn_db.php';
 require_once 'common.php';
 
 class Webhook
 {
     //base url
     public $base_url = 'https://dev-payedin-api-vowex3bi3a-ez.a.run.app/payments/verify';
-
-    public function __construct()
+    public $conn;
+    public function __construct($conn)
     {
-
+        $this->conn = $conn;
     }
 
     public function validateBulkPayment()
