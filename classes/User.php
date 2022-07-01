@@ -52,6 +52,47 @@
 
         }
 
+        function bulkRegisterCamp($participantArray, $tx_ref, $userId, $campId, $date_time, $pref){
+            $savedIds = [];
+            $success = "Registration Successful";
+            $failure = "Oops! Something went wrong, please try again";
+
+            for($i = 0 ; $i < count($participantArray); $i++){
+                $firstname = $participantArray[$i]["firstname"];
+                $lastname = $participantArray[$i]["lastname"];
+                $phone = $participantArray[$i]["phone"];
+                $email = $participantArray[$i]["email"];
+                $ageGroup = $participantArray[$i]["ageGroup"];
+                $gender = $participantArray[$i]["gender"];
+                $kidsComing = $participantArray[$i]["kidsComing"];
+                $kidsNumber = $participantArray[$i]["kidsNumber"];
+                $member = $participantArray[$i]["member"];
+                $district = $participantArray[$i]["district"];
+                $arrivalDate = $participantArray[$i]["arrivalDate"];
+                $houseAccess = $participantArray[$i]["houseAccess"];
+                $anyAmount = $participantArray[$i]["anyAmount"];
+                $regType = $participantArray[$i]["regType"];
+                $date_time = $date_time;
+                $campId = 4;
+                $userId = $userId;
+                $tx_ref = $tx_ref;
+                $ref = $pref;
+                $tableFields = "firstname, lastname, phone, email, age_group, gender, cwk, hmk, member, district, arrival, house, support_kc, camp_id, user_id, reg_type, date_created, ref, tx_ref";
+                $variables = "'$firstname', '$lastname', '$phone', '$email', '$ageGroup', '$gender', '$kidsComing', '$kidsNumber', '$member', '$district', '$arrivalDate', '$houseAccess', '$anyAmount', '$campId', '$userId', '$regType', '$date_time', '$ref', '$tx_ref'";
+                $table = "camp_reg_";
+                // Query::dbInsert($this->conn, $table, $tableFields, $variables, $success, $failure);
+                if(mysqli_query($this->conn, "INSERT INTO `$table` ($tableFields) VALUES ($variables)")) {
+                    $last_id = $this->conn->insert_id;
+                    array_push($savedIds, $last_id);
+                }
+            }
+            if(count($savedIds) > 0) {
+                echo $success;
+            } else {
+                echo $failure;
+            }
+        }
+
         function getPayedInBulk ($tx_ref, $pref){
             // echo "in bbb";
             $sel = mysqli_query($this->conn, "SELECT * FROM payedin_bulk_reg WHERE tx_ref = '$tx_ref'");
@@ -63,7 +104,13 @@
                     $userId = $row['user_id'];
                     $campId = $row['camp_id'];
                     $date_time = date("Y-m-d h:i:s A");
-                    $this->bulkRegisterCamp($participantArray, $tx_ref, $userId, $campId, $date_time, $pref);
+
+                    $sql = mysqli_query($this->conn, "SELECT * FROM camp_reg_ WHERE tx_ref = '$tx_ref'");
+                    $query = mysqli_num_rows($sql);
+
+                    if ($query < 1) {
+                        $this->bulkRegisterCamp($participantArray, $tx_ref, $userId, $campId, $date_time, $pref);
+                    }
                 }
             //     echo json_encode($returnArray);
             } else {
@@ -175,46 +222,6 @@
 
         }
 
-        function bulkRegisterCamp($participantArray, $tx_ref, $userId, $campId, $date_time, $pref){
-            $savedIds = [];
-            $success = "Registration Successful";
-            $failure = "Oops! Something went wrong, please try again";
-
-            for($i = 0 ; $i < count($participantArray); $i++){
-                $firstname = $participantArray[$i]["firstname"];
-                $lastname = $participantArray[$i]["lastname"];
-                $phone = $participantArray[$i]["phone"];
-                $email = $participantArray[$i]["email"];
-                $ageGroup = $participantArray[$i]["ageGroup"];
-                $gender = $participantArray[$i]["gender"];
-                $kidsComing = $participantArray[$i]["kidsComing"];
-                $kidsNumber = $participantArray[$i]["kidsNumber"];
-                $member = $participantArray[$i]["member"];
-                $district = $participantArray[$i]["district"];
-                $arrivalDate = $participantArray[$i]["arrivalDate"];
-                $houseAccess = $participantArray[$i]["houseAccess"];
-                $anyAmount = $participantArray[$i]["anyAmount"];
-                $regType = $participantArray[$i]["regType"];
-                $date_time = $date_time;
-                $campId = 4;
-                $userId = $userId;
-                $tx_ref = $tx_ref;      
-                $ref = $pref;
-                $tableFields = "firstname, lastname, phone, email, age_group, gender, cwk, hmk, member, district, arrival, house, support_kc, camp_id, user_id, reg_type, date_created, ref, tx_ref";
-                $variables = "'$firstname', '$lastname', '$phone', '$email', '$ageGroup', '$gender', '$kidsComing', '$kidsNumber', '$member', '$district', '$arrivalDate', '$houseAccess', '$anyAmount', '$campId', '$userId', '$regType', '$date_time', '$ref', '$tx_ref'";    
-                $table = "camp_reg_";
-                // Query::dbInsert($this->conn, $table, $tableFields, $variables, $success, $failure);
-                if(mysqli_query($this->conn, "INSERT INTO `$table` ($tableFields) VALUES ($variables)")) {
-                    $last_id = $this->conn->insert_id;
-                    array_push($savedIds, $last_id);
-                }
-            }
-            if(count($savedIds) > 0) {
-                echo $success;
-            } else {
-                echo $failure;
-            }
-        }
 
         function pbulkRegisterCamp($list, $tx_ref, $userId, $campId, $date_time){
             $tableFields = "list, tx_ref, user_id, camp_id, date";
