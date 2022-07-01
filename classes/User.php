@@ -112,8 +112,8 @@
                     $date_time = date("Y-m-d h:i:s A");
 
                     $this->bulkRegisterCamp($participantArray, $tx_ref, $userId, $campId, $date_time, $pref);
-
                 }
+                mysqli_query($this->conn, "UPDATE payedin_bulk_reg SET is_processed = 1 WHERE tx_ref = '$tx_ref'");
             //     echo json_encode($returnArray);
             } else {
                 echo json_encode($row);
@@ -147,6 +147,10 @@
                         $row['date_created'], 
                         $row['reg_type'],$pref, 
                         $row['user_id'], $row['camp_id'] , $row['tx_ref']);
+
+                        //update payedin camp reg record to processed
+                        mysqli_query($this->conn, "UPDATE payedin_camp_reg SET is_processed = 1 WHERE tx_ref = '$tx_ref'");
+
                     }
                 }
                 echo json_encode($returnArray);
