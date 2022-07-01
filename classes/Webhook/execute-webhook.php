@@ -1,4 +1,6 @@
 <?php
 
 $webhook = new Webhook();
-$webhook->validateBulkPayment();;
+$webhook->validateBulkPayment();
+
+
