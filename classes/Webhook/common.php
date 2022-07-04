@@ -3,6 +3,7 @@
 function perform_http_request($method, $url, $data = false) {
     $key = 'pt_sk_b067e1645681ee0c7bcbbdb19953a7a800485eb0'; //staging key for collins
     //$key = 'pt_sk_e9dfcd4df1bf3ca81126c87242031dd51464b03d'; //dev key for Niyi
+    //$key = 'pt_sk_c87c885209a39e993b25c791f8a6e52da6a6c191'; //production key for Foursquare National Youth Ministry
 
     $curl = curl_init();
     switch ($method) {
