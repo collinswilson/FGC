@@ -1,8 +1,10 @@
 <?php
 
 function perform_http_request($method, $url, $data = false) {
-    $curl = curl_init();
+    $key = 'pt_sk_b067e1645681ee0c7bcbbdb19953a7a800485eb0'; //staging key for collins
+    //$key = 'pt_sk_e9dfcd4df1bf3ca81126c87242031dd51464b03d'; //dev key for Niyi
 
+    $curl = curl_init();
     switch ($method) {
         case "POST":
             curl_setopt($curl, CURLOPT_POST, 1);
@@ -10,7 +12,6 @@ function perform_http_request($method, $url, $data = false) {
             if ($data) {
                 curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
             }
-
             break;
         case "PUT":
             curl_setopt($curl, CURLOPT_PUT, 1);
@@ -24,15 +25,14 @@ function perform_http_request($method, $url, $data = false) {
 
     curl_setopt($curl, CURLOPT_URL, $url);
     curl_setopt($curl, CURLOPT_HTTPHEADER, array(
-        'Authorization: Bearer pt_sk_b067e1645681ee0c7bcbbdb19953a7a800485eb0',
+        'Authorization: Bearer '.$key,
         'Content-Type: application/json',
     ));
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, true); //If SSL Certificate Not Available, for example, I am calling from http://localhost URL
+    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false); //If SSL Certificate Not Available, for example, I am calling from http://localhost URL
 
     $result = curl_exec($curl);
-
     curl_close($curl);
 
-    return $result;
+    return json_decode($result, true);
 }
