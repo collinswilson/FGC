@@ -21,7 +21,7 @@ if ($num > 0) {
         $response = perform_http_request('POST', $base_url, $request_data);
         if(!$response['success']) {
             echo 'An error occurred with message: '.$response['message'];
-            return;
+//            return;
         } else {
             //check if the transaction is successful
             if($response['data']['status'] == 1) {
