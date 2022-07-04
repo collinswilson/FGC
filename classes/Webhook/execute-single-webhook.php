@@ -20,8 +20,8 @@ if ($num > 0) {
         $request_data = json_encode(array("reference" => $row['tx_ref']));
         $response = perform_http_request('POST', $base_url, $request_data);
         if(!$response['success']) {
-//            echo 'An error occurred with message: '.$response['message'];
-            continue;
+            echo 'An error occurred with message: '.$response['message'];
+            return;
         } else {
             //check if the transaction is successful
             if($response['data']['status'] == 1) {
@@ -62,7 +62,7 @@ if ($num > 0) {
                     }
                     mysqli_query($conn, "UPDATE payedin_camp_reg SET is_processed = 1 WHERE tx_ref = '$external_reference'");
 
-                    echo "Successfully added";
+                    echo "Successfully added ".$external_reference.'at time: '.date('Y-m-d H"i:s');
                 }
             }
         }

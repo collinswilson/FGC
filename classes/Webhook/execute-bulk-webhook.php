@@ -24,8 +24,8 @@ if($num > 0) {
         // return;
         //check if there is an error message and display message
         if(!$response['success']) {
-//            echo 'An error occurred with message: '.$response['message'];
-            continue;
+            echo 'An error occurred with message: '.$response['message'];
+            return;
         } else {
             //check if the transaction is successful
             if($response['data']['status'] == 1) {
