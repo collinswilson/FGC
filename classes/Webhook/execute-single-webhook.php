@@ -62,7 +62,7 @@ if ($num > 0) {
                     }
                     mysqli_query($conn, "UPDATE payedin_camp_reg SET is_processed = 1 WHERE tx_ref = '$external_reference'");
 
-                    echo "Successfully executed single {$external_reference} at time: ".date('Y-m-d H"i:s')."\n\n";
+                    echo "Successfully executed single {$external_reference} at time: ".date('Y-m-d H"i:s')."<br />";
                 }
             }
         }

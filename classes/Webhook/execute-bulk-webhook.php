@@ -24,19 +24,19 @@ if($num > 0) {
         // return;
         //check if there is an error message and display message
         if(!$response['success']) {
-            echo 'An error occurred with message: '.$response['message'].'<br />';
+            echo "An error occurred with message: {$response['message']} <br />";
 //            return;
         } else {
             //check if the transaction is successful
             if($response['data']['status'] == 1) {
-                //check if it exis in the data
+                //check if it exist in the data
                 $external_reference = $response['data']['external_reference'];
                 $reference = $response['data']['reference'];
                 //check if exist in the bulk database; if yes, get record and mark as processed
                 $query = mysqli_query($conn, "SELECT * FROM payedin_bulk_reg WHERE tx_ref = '$external_reference'");
                 $count = mysqli_num_rows($query);
                 //check if a record exist
-                echo "I executed this query \n\n";
+                echo "I executed this query <br />";
                 if($count > 0) {
                     $res = mysqli_fetch_assoc($query);
                     $userId = $res['user_id'];
@@ -74,7 +74,7 @@ if($num > 0) {
                     }
                     //mark record as processed
                     mysqli_query($conn, "UPDATE payedin_bulk_reg SET is_processed = 1 WHERE tx_ref = '$external_reference'");
-                    echo "Successfully executed bulk {$external_reference} at time: ".date('Y-m-d H"i:s')."\n\n";
+                    echo "Successfully executed bulk {$external_reference} at time: ".date('Y-m-d H"i:s')."<br />";
                 }
             }
         }
