@@ -36,9 +36,8 @@ if($num > 0) {
                 $query = mysqli_query($conn, "SELECT * FROM payedin_bulk_reg WHERE tx_ref = '$external_reference'");
                 $count = mysqli_num_rows($query);
                 //check if a record exist
-                echo "I executed this query <br />";
+                echo "I executed this query \n\n";
                 if($count > 0) {
-                    echo "I entered here 3 <br />";
                     $res = mysqli_fetch_assoc($query);
                     $userId = $res['user_id'];
                     $campId = $res['camp_id'];
@@ -75,6 +74,7 @@ if($num > 0) {
                     }
                     //mark record as processed
                     mysqli_query($conn, "UPDATE payedin_bulk_reg SET is_processed = 1 WHERE tx_ref = '$external_reference'");
+                    echo "Successfully executed bulk {$external_reference} at time: ".date('Y-m-d H"i:s')."\n\n";
                 }
             }
         }
