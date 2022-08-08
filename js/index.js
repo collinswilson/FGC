@@ -2561,7 +2561,7 @@ $(document).ready(function() {
 
 
 
-            /*e.preventDefault();
+            e.preventDefault();
 
             let handler = PaystackPop.setup({
 
@@ -2685,7 +2685,7 @@ $(document).ready(function() {
 
             });
 
-            handler.openIframe();*/
+            handler.openIframe();
 
         }
 

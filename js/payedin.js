@@ -703,7 +703,7 @@ const rregisterCampAnonymous = () => {
 
 
     }
-}
+} 
 
 const pregisterCampAnonymousfunc = () => {
     localStorage.removeItem("bulk")

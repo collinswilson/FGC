@@ -1280,7 +1280,7 @@
                                         Loading...
                                 </button>
             
-                                <button type="button" class="btn btn-rounded btn-danger" id="" onclick="pbulkRegisterCamp()"><i class="far fa-plus-square pr-2" aria-hidden="true"></i></i>Process</button>
+                                <button type="button" class="btn btn-rounded btn-danger" id="bulkRegisterCamp" onclick=""><i class="far fa-plus-square pr-2" aria-hidden="true"></i></i>Process</button>
                             </div>
                         </div>
                         <!--Bulk table-->
