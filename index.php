@@ -620,7 +620,7 @@
 
                         <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
 
-                        Loading...
+                        Loading... 
 
                     </button>
                     <button type="button" class="btn btn-rounded btn-danger" id="rregisterCampAnonymous"  onclick=""><i class="far fa-plus-square pr-2" aria-hidden="true"></i> Register Now</button>

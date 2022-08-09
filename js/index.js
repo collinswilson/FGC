@@ -2042,9 +2042,9 @@ $(document).ready(function() {
 
             let handler = PaystackPop.setup({
 
-            key: 'pk_live_b3e5d1863418258bc93d723b28364de61e043bc1',
+            // key: 'pk_live_b3e5d1863418258bc93d723b28364de61e043bc1',
 
-            // key: 'pk_test_4697a3a0abdf2c4173337a341a907588df55a51e',
+            key: 'pk_test_4697a3a0abdf2c4173337a341a907588df55a51e',
 
             email: email == "" ? 'subscribers@foursquareyouthcamp.com' : email,
 
@@ -2096,9 +2096,9 @@ $(document).ready(function() {
 
                 $.post("classes/controller.php", { regularRegAnonymous, firstname, lastname, phone, email, ageGroup, gender, kidsComing, kidsNumber, member, district, arrivalDate, houseAccess, anyAmount, ref, userId, campId }, function(data){
 
-                    console.log(data);
+                    console.log(data, 'paydata');
 
-                    if(data === "Registration Successful"){
+                    if(true){
 
                         let qrcode = new QRCode('qrCode');
 
@@ -2565,9 +2565,9 @@ $(document).ready(function() {
 
             let handler = PaystackPop.setup({
 
-            key: 'pk_live_b3e5d1863418258bc93d723b28364de61e043bc1',
+            // key: 'pk_live_b3e5d1863418258bc93d723b28364de61e043bc1',
 
-            // key: 'pk_test_4697a3a0abdf2c4173337a341a907588df55a51e', // Replace with your public key
+            key: 'pk_test_4697a3a0abdf2c4173337a341a907588df55a51e', // Replace with your public key
 
             email: email == "" ? 'subscribers@foursquareyouthcamp.com' : email,
 
@@ -2617,67 +2617,125 @@ $(document).ready(function() {
 
                 let ref = response.reference;
 
+                if(true){
+
+                    let qrcode = new QRCode('qrCode');
+
+                    qrcode.makeCode(userId + ':' + campId + ':' + ref + ':bulk');
+
+
+
+                    setModal({
+
+                        headerSelector: $("#modalHeader"), 
+
+                        headerContent: "<i class='fas fa-check-circle text-success'></i> Success",
+
+                        bodySelector: $("#modalBody"),
+
+                        bodyContent:  "",
+
+                        footerSelector: null,
+
+                        footerContent: null,
+
+                        modalSelector: $("#qrModal"),
+
+                        modalState: "show"
+
+                    });
+
+                 }else{
+
+                     setModal({
+
+                         headerSelector: $("#modalHeader"), 
+
+                         headerContent: "<i class='fas fa-exclamation-triangle text-danger'></i> Error",
+
+                         bodySelector: $("#modalBody"),
+
+                         bodyContent:  "Server error, try again!",
+
+                         footerSelector: null,
+
+                         footerContent: null,
+
+                         modalSelector: $("#regModal"),
+
+                         modalState: "show"
+
+                     }); 
+
+
+
+                     $("#pregisterLoader").hide('slow');
+
+                    $("#pregisterCamp").show('slow');
+
+                 }
+
                 
 
                 $.post("../../classes/controller.php", { premiumReg, firstname, lastname, phone, email, ageGroup, gender, kidsComing, kidsNumber, member, district, arrivalDate, houseAccess, premiumAmount, ref, userId, campId }, function(data){
 
-                    if(data === "Registration Successful"){
+                    // if(data === "Registration Successful"){
 
-                        let qrcode = new QRCode('qrCode');
+                    //     let qrcode = new QRCode('qrCode');
 
-                        qrcode.makeCode(userId + ':' + campId + ':' + ref + ':bulk');
-
-
-
-                        setModal({
-
-                            headerSelector: $("#modalHeader"), 
-
-                            headerContent: "<i class='fas fa-check-circle text-success'></i> Success",
-
-                            bodySelector: $("#modalBody"),
-
-                            bodyContent:  "",
-
-                            footerSelector: null,
-
-                            footerContent: null,
-
-                            modalSelector: $("#qrModal"),
-
-                            modalState: "show"
-
-                        });
-
-                     }else{
-
-                         setModal({
-
-                             headerSelector: $("#modalHeader"), 
-
-                             headerContent: "<i class='fas fa-exclamation-triangle text-danger'></i> Error",
-
-                             bodySelector: $("#modalBody"),
-
-                             bodyContent:  "Server error, try again!",
-
-                             footerSelector: null,
-
-                             footerContent: null,
-
-                             modalSelector: $("#regModal"),
-
-                             modalState: "show"
-
-                         }); 
+                    //     qrcode.makeCode(userId + ':' + campId + ':' + ref + ':bulk');
 
 
 
-                         $("#pregisterLoader").hide('slow');
+                    //     setModal({
 
-                        $("#pregisterCamp").show('slow');
+                    //         headerSelector: $("#modalHeader"), 
 
-                     }
+                    //         headerContent: "<i class='fas fa-check-circle text-success'></i> Success",
+
+                    //         bodySelector: $("#modalBody"),
+
+                    //         bodyContent:  "",
+
+                    //         footerSelector: null,
+
+                    //         footerContent: null,
+
+                    //         modalSelector: $("#qrModal"),
+
+                    //         modalState: "show"
+
+                    //     });
+
+                    //  }else{
+
+                    //      setModal({
+
+                    //          headerSelector: $("#modalHeader"), 
+
+                    //          headerContent: "<i class='fas fa-exclamation-triangle text-danger'></i> Error",
+
+                    //          bodySelector: $("#modalBody"),
+
+                    //          bodyContent:  "Server error, try again!",
+
+                    //          footerSelector: null,
+
+                    //          footerContent: null,
+
+                    //          modalSelector: $("#regModal"),
+
+                    //          modalState: "show"
+
+                    //      }); 
+
+
+
+                    //      $("#pregisterLoader").hide('slow');
+
+                    //     $("#pregisterCamp").show('slow');
+
+                    //  }
 
                 });
 
@@ -2717,8 +2775,8 @@ $(document).ready(function() {
 
             // e.preventDefault();
             let handler = PaystackPop.setup({
-            key: 'pk_live_b3e5d1863418258bc93d723b28364de61e043bc1',
-            // key: 'pk_test_4697a3a0abdf2c4173337a341a907588df55a51e',
+            // key: 'pk_live_b3e5d1863418258bc93d723b28364de61e043bc1',
+            key: 'pk_test_4697a3a0abdf2c4173337a341a907588df55a51e',
             email: email == "" ? 'subscribers@foursquareyouthcamp.com' : email,
             amount: totalAmount * 100,
             ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
@@ -2747,22 +2805,35 @@ $(document).ready(function() {
                 let ref = response.reference;
                 let arrayParticipant = JSON.stringify(participants);
                 console.log(arrayParticipant);
+                
+                let qrcode = new QRCode('qrCode');
+                qrcode.makeCode(userId + ':' + campId + ':' + ref + ':bulk');
+                setModal({
+                    headerSelector: $("#modalHeader"), 
+                    headerContent: "<i class='fas fa-check-circle text-success'></i> Success",
+                    bodySelector: $("#modalBody"),
+                    bodyContent:  "Registration Successful!!!",
+                    footerSelector: null,
+                    footerContent: null,
+                    modalSelector: $("#qrModal"),
+                    modalState: "show"
+                });
 
                 $.post("../../classes/controller.php", { bulkReg, arrayParticipant, ref, userId, campId }, function(data){
                     console.log(data);
                     let qrcode = new QRCode('qrCode');
                     qrcode.makeCode(userId + ':' + campId + ':' + ref + ':bulk');
 
-                    setModal({
-                        headerSelector: $("#modalHeader"), 
-                        headerContent: "<i class='fas fa-check-circle text-success'></i> Success",
-                        bodySelector: $("#modalBody"),
-                        bodyContent:  "Registration Successful!!!",
-                        footerSelector: null,
-                        footerContent: null,
-                        modalSelector: $("#qrModal"),
-                        modalState: "show"
-                    });
+                    // setModal({
+                    //     headerSelector: $("#modalHeader"), 
+                    //     headerContent: "<i class='fas fa-check-circle text-success'></i> Success",
+                    //     bodySelector: $("#modalBody"),
+                    //     bodyContent:  "Registration Successful!!!",
+                    //     footerSelector: null,
+                    //     footerContent: null,
+                    //     modalSelector: $("#qrModal"),
+                    //     modalState: "show"
+                    // });
                     //$("#participantTable").empty();
                 });
             }
@@ -2981,9 +3052,9 @@ $(document).ready(function() {
 
             let handler = PaystackPop.setup({
 
-            key: 'pk_live_b3e5d1863418258bc93d723b28364de61e043bc1',
+            // key: 'pk_live_b3e5d1863418258bc93d723b28364de61e043bc1',
 
-            // key: 'pk_test_4697a3a0abdf2c4173337a341a907588df55a51e',
+            key: 'pk_test_4697a3a0abdf2c4173337a341a907588df55a51e',
 
             email: email == "" ? 'subscribers@foursquareyouthcamp.com' : email,
 
