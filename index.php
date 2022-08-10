@@ -1150,7 +1150,7 @@
                         Loading...
 
                     </button>
-                    <button type="button" class="btn btn-rounded btn-danger" id="pregisterCamp" onclick=""><i class="far fa-plus-square pr-2" aria-hidden="true"></i></i>Register Now</button>
+                    <button type="button" class="btn btn-rounded btn-danger" id="pregisterCampAnonymous" onclick=""><i class="far fa-plus-square pr-2" aria-hidden="true"></i></i>Register Now</button>
 
 
                     </div> 

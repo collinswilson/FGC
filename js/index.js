@@ -2925,7 +2925,7 @@ $(document).ready(function() {
 
                 $.post("classes/controller.php", { premiumRegAnonymous, firstname, lastname, phone, email, ageGroup, gender, kidsComing, kidsNumber, member, district, arrivalDate, houseAccess, premiumAmount, ref, userId, campId }, function(data){
 
-                    if(data === "Registration Successful"){
+                    if(true){
 
                         let qrcode = new QRCode('qrCode');
 
